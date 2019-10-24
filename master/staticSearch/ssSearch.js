@@ -257,7 +257,6 @@ class StaticSearch{
       //Perhaps there are filters without a search string.
       this.listDocsByFilters();
     }
-    this.resultsDiv.scrollIntoView();
     return result;
   }
 
@@ -741,8 +740,7 @@ class StaticSearch{
 /**
   * @function StaticSearch~docMatchesFilters
   * @description Checks a document against the set of filters to
-  *              determine whether it matches or not. TODO: Add handling
-  *              for date filters to this function.
+  *              determine whether it matches or not.
   * @param {String} docUri id of the document to be checked.
   * @param {Array<Array<string>, <Array>>} filters an array of descriptors
   *                each with an array of values.
@@ -762,7 +760,7 @@ class StaticSearch{
       let fName = f[0];
       let fVals = f[1];
       for (let fVal of fVals){
-        if ((doc.filters[fName] != null) && (doc.filters[fName].indexOf(fVal) > -1)){
+        if (doc[fName].indexOf(fVal) > -1){
           if (!matchAll){
             return true;
           }
