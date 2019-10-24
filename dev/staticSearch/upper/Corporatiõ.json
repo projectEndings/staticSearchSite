@@ -1,0 +1,13 @@
+
+  { "token" : "Corporatiõ",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Corporatiõ",
+            "context" : "...and for Illuſtrating the worth of that worthy <mark>Corporatiõ<\/mark> (whereof you are a Member) come now...",
+            "weight" : 1 } ] } ] }

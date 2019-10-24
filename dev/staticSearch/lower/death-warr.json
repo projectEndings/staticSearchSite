@@ -1,0 +1,13 @@
+
+  { "token" : "death-warr",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "death-warrant",
+            "context" : "...Let's try this word from the Keats project: <mark>death-warrant<\/mark>. But neither of these made up words...",
+            "weight" : 1 } ] } ] }

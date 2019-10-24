@@ -1,0 +1,107 @@
+
+  { "token" : "document",
+    "instances" : 
+    [ 
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This <mark>document<\/mark> contains a number of inline elements, which...",
+            "weight" : 1 },
+          
+          { "form" : "document",
+            "context" : "...this one or other specialized bits in a <mark>document<\/mark>. For instance, we might want toponyms like...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "documented",
+            "context" : "Well-<mark>documented<\/mark> use-cases are important for testing works-in-progress. But...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "search",
+        "docTitle" : "Search",
+        "docUri" : "search.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Document",
+            "context" : " <mark>Document<\/mark> Subject",
+            "weight" : 1 } ] },
+      
+      { "docId" : "duplicateFn",
+        "docTitle" : "Duplicate Filename",
+        "docUri" : "nested\/duplicateFn.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This <mark>document<\/mark> has a duplicate filename somewhere up the...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "noTitleNoId",
+        "docTitle" : "noTitleNoId",
+        "docUri" : "noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This <mark>document<\/mark> doesn't contain a title, so we must...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This part of the <mark>document<\/mark> contains blockquotes.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "noid",
+        "docTitle" : "No Id Document",
+        "docUri" : "noid.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This is a <mark>document<\/mark> (not nested) without an id.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "duplicateFn",
+        "docTitle" : "Duplicate Filename",
+        "docUri" : "duplicateFn.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This <mark>document<\/mark> has a duplicate filename somewhere up the...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "nested_nested_noId",
+        "docTitle" : "Nested Test",
+        "docUri" : "nested\/nested_noId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This <mark>document<\/mark> is nested, but with no id.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "nested_nested_noTitleNoId",
+        "docTitle" : "nested_nested_noTitleNoId",
+        "docUri" : "nested\/nested_noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "document",
+            "context" : "This a nested <mark>document<\/mark> with no title and no Id.",
+            "weight" : 1 } ] } ] }

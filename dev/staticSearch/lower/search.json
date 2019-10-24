@@ -1,0 +1,27 @@
+
+  { "token" : "search",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "search",
+            "context" : "...block-quotation to be the primary part of the <mark>search<\/mark> context. Let's take this paragraph from the...",
+            "weight" : 1 },
+          
+          { "form" : "Search",
+            "context" : "...such as \"Smith-Hawkins.\" When doing a Whole Word <mark>Search<\/mark> or query, users expect to find the...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "search",
+        "docTitle" : "Search",
+        "docUri" : "search.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Search",
+            "context" : "<mark>Search<\/mark> ",
+            "weight" : 1 } ] } ] }

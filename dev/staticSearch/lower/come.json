@@ -1,0 +1,13 @@
+
+  { "token" : "come",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "come",
+            "context" : "...that worthy Corporatiõ (whereof you are a Member) <mark>come<\/mark> now humbly to kiſſe your Lordſhips handes;...",
+            "weight" : 1 } ] } ] }

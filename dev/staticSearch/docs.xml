@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns="http://www.w3.org/2005/xpath-functions">
+   <map key="hyphens.html">
+      <string key="docTitle">Hypens Test</string>
+      <map key="filters">
+         <array key="Document Subject">
+            <string>Hyphenation</string>
+         </array>
+      </map>
+      <map key="dates"/>
+   </map>
+   <map key="search.html">
+      <string key="docTitle">Search</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="nested/duplicateFn.html">
+      <string key="docTitle">Duplicate Filename</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="noTitleNoId.html">
+      <string key="docTitle">noTitleNoId</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="replacements.html">
+      <string key="docTitle">Replacements</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="contexts.html">
+      <string key="docTitle">Contexts Test</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="noid.html">
+      <string key="docTitle">No Id Document</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="duplicateFn.html">
+      <string key="docTitle">Duplicate Filename</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="nested/nested_withId.html">
+      <string key="docTitle">Nested HTML (with id)</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="foreign.html">
+      <string key="docTitle">Foreign Languages</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="inlines.html">
+      <string key="docTitle">inlines</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="nested/nested_noId.html">
+      <string key="docTitle">Nested Test</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+   <map key="nested/nested_noTitleNoId.html">
+      <string key="docTitle">nested_nested_noTitleNoId</string>
+      <map key="filters"/>
+      <map key="dates"/>
+   </map>
+</map>

@@ -1,0 +1,17 @@
+
+  { "token" : "unicod",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "Unicode",
+            "context" : "...search context. Let's take this paragraph from the <mark>Unicode<\/mark> UNICODE TEXT SEGMENTATION standard:",
+            "weight" : 1 },
+          
+          { "form" : "UNICODE",
+            "context" : "...context. Let's take this paragraph from the Unicode <mark>UNICODE<\/mark> TEXT SEGMENTATION standard:",
+            "weight" : 1 } ] } ] }

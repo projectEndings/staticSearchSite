@@ -1,0 +1,13 @@
+
+  { "token" : "never",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "never",
+            "context" : "...often through out texts, where le mot will <mark>never<\/mark> be in the dictionary. This could be...",
+            "weight" : 1 } ] } ] }

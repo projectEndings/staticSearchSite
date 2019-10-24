@@ -1,0 +1,13 @@
+
+  { "token" : "progress",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "progress",
+            "context" : "Well-documented use-cases are important for testing works-in-<mark>progress<\/mark>. But semi-automatic process can only go so...",
+            "weight" : 1 } ] } ] }

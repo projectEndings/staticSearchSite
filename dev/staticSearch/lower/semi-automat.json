@@ -1,0 +1,13 @@
+
+  { "token" : "semi-automat",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "semi-automatic",
+            "context" : "...Well-documented use-cases are important for testing works-in-progress. But <mark>semi-automatic<\/mark> process can only go so far. Still...",
+            "weight" : 1 } ] } ] }

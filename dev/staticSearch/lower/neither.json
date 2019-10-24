@@ -1,0 +1,13 @@
+
+  { "token" : "neither",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "neither",
+            "context" : "...this word from the Keats project: death-warrant. But <mark>neither<\/mark> of these made up words should work:...",
+            "weight" : 1 } ] } ] }

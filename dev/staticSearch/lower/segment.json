@@ -1,0 +1,13 @@
+
+  { "token" : "segment",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "SEGMENTATION",
+            "context" : "...take this paragraph from the Unicode UNICODE TEXT <mark>SEGMENTATION<\/mark> standard:",
+            "weight" : 1 } ] } ] }

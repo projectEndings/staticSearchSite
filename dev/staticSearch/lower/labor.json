@@ -1,0 +1,13 @@
+
+  { "token" : "labor",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "labor",
+            "context" : "...go so far. Still the process should be semi-<mark>labor<\/mark>-intensive, as it requires the user to configure...",
+            "weight" : 1 } ] } ] }

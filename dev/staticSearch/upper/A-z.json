@@ -1,0 +1,13 @@
+
+  { "token" : "A-z",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "A-Z",
+            "context" : "Beyond <mark>A-Z<\/mark>",
+            "weight" : 2 } ] } ] }

@@ -1,0 +1,41 @@
+
+  { "token" : "element",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "elements",
+            "context" : "...as context bits. Note here that arbitrary span <mark>elements<\/mark> will not be processed. That's a break...",
+            "weight" : 1 },
+          
+          { "form" : "elements",
+            "context" : "Now let's say you use div <mark>elements<\/mark> instead of paragraphs, but you also use...",
+            "weight" : 1 },
+          
+          { "form" : "element",
+            "context" : "...one might also use divs as an inline <mark>element<\/mark>, which certainly isn't advisable.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "elements",
+            "context" : "But not constructs for <mark>elements<\/mark> like <blockquote> or this & that.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "elements",
+            "context" : "...This document contains a number of inline <mark>elements<\/mark>, which should mostly be deleted from the...",
+            "weight" : 1 } ] } ] }

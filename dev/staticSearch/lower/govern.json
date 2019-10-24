@@ -1,0 +1,13 @@
+
+  { "token" : "govern",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "government",
+            "context" : "...not Proto-Indo-European languages). Here's another triple hyphenated word: non-<mark>government<\/mark>-owned corporations. Thanks Wikipedia! Let's try this word...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "break",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "break",
+            "context" : "...span elements will not be processed. That's a <mark>break<\/mark> in a paragraph, which should also be...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "definit",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "definition",
+            "context" : "...to keep the hyphen out of the default <mark>definition<\/mark>. Hyphens include U+002D HYPHEN-MINUS, U+2010 HYPHEN, possibly...",
+            "weight" : 1 } ] } ] }

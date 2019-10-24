@@ -1,0 +1,13 @@
+
+  { "token" : "side",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "side",
+            "context" : "...for instance, which we will float to the <mark>side<\/mark>, should have their own context.",
+            "weight" : 1 } ] } ] }

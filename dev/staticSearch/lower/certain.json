@@ -1,0 +1,13 @@
+
+  { "token" : "certain",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "certainly",
+            "context" : "...also use divs as an inline element, which <mark>certainly<\/mark> isn't advisable.",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "honor",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Honor",
+            "context" : "...theſe preſentmentes which were intẽded principally for your <mark>Honor<\/mark>, and for Illuſtrating the worth of that...",
+            "weight" : 1 } ] } ] }

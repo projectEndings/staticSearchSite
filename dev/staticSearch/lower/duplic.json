@@ -1,0 +1,23 @@
+
+  { "token" : "duplic",
+    "instances" : 
+    [ 
+      { "docId" : "duplicateFn",
+        "docTitle" : "Duplicate Filename",
+        "docUri" : "nested\/duplicateFn.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "duplicate",
+            "context" : "This document has a <mark>duplicate<\/mark> filename somewhere up the tree.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "duplicateFn",
+        "docTitle" : "Duplicate Filename",
+        "docUri" : "duplicateFn.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "duplicate",
+            "context" : "This document has a <mark>duplicate<\/mark> filename somewhere up the tree.",
+            "weight" : 1 } ] } ] }
