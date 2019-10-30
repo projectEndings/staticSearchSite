@@ -21,7 +21,7 @@
         }
         div.ssFilters fieldset, div.ssDates fieldset{
             margin: 0.25em auto;
-            flex-grow: 1;   
+            flex-grow: 1;
         }
         ul.ssCheckboxList{
             list-style-type: none;
@@ -50,12 +50,14 @@
       <div id="staticSearch"><script src="staticSearch/ssPorter2Stemmer.js"></script><script src="staticSearch/ssSearch.js"></script><script>
                 var Sch;
                 window.addEventListener('load', function(){Sch = new StaticSearch();});
-            </script><form accept-charset="UTF-8" id="ssForm" data-allowPhrasal="yes" onsubmit="return false;"><span class="ssQueryAndButton"><input type="text" id="ssQuery"/><button id="ssDoSearch">Search</button></span><fieldset>
-               <legend>Document Subject</legend>
-               <ul class="checkboxList">
-                  <li><input type="checkbox" title="Document Subject" value="Hyphenation" id="opt_1_1" class="ssFilter"/><label for="opt_1_1">Hyphenation</label></li>
-               </ul>
-            </fieldset>
+            </script><form accept-charset="UTF-8" id="ssForm" data-allowPhrasal="yes" onsubmit="return false;"><span class="ssQueryAndButton"><input type="text" id="ssQuery"/><button id="ssDoSearch">Search</button></span><div class="ssDescFilters">
+               <fieldset class="ssFieldset">
+                  <legend>Document Subject</legend>
+                  <ul class="ssDescCheckboxList">
+                     <li><input type="checkbox" title="Document Subject" value="Hyphenation" id="opt_1_1" class="staticSearch.desc"/><label for="opt_1_1">Hyphenation</label></li>
+                  </ul>
+               </fieldset>
+            </div>
          </form>
          <div id="ssResults"></div>
       </div>
