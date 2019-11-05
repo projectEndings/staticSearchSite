@@ -91,12 +91,10 @@
   * (expressed as CSS selectors):
   *
   * input#ssQuery[type='text']   (the main search box)
-  * button#ssDoSearch            (button for invoking search)
-  * div.ssResults                (div in which to output the results)
-  * input[type='checkbox'].staticSearch.desc  (optional; checkbox lists for filtering based on text labels)
-  * input[type='text'].staticSearch.date      (optional; textboxes for date filters)
-  * input[type='checkbox'].staticSearch.bool  (optional: checkboxes for boolean filters)
-  * input[type='text'].ssText  (NOT YET IMPLEMENTED: type-ahead search filter boxes)
+  * button#ssDoSearch                  (button for invoking search)
+  * div.ssResults                (div in which to outpu the results)
+  * input[type='checkbox'].ssFilter              (optional; checkbox lists for filtering search)
+  * input[type='text'].ssFilter  (NOT YET IMPLEMENTED: type-ahead search filter boxes)
   *
   * The first is mandatory, although the user is
   * not required to use it; they may choose simply
@@ -105,7 +103,7 @@
   * search by pressing return while the text box has focus.
   * The third is mandatory, because there must be somewhere to
   * show the results of a search.
-  * The rest are optional, but if present,
+  * The other two are optional, but if present,
   * they will be incorporated.
   */
 class StaticSearch{
@@ -138,25 +136,20 @@ class StaticSearch{
       if (!this.resultsDiv){
        throw new Error('Failed to find div with id "ssResults". Cannot provide search functionality.');
       }
-      //Optional search filters:
-      //Description label filters
-      this.descFilterCheckboxes =
-           Array.from(document.querySelectorAll("input[type='checkbox'][class='staticSearch.desc']"));
-      //Date filters
-      this.dateFilterTextboxes =
-           Array.from(document.querySelectorAll("input[type='text'][class='staticSearch.date']"));
-      //Boolean filters
-      this.boolFilterSelects =
-           Array.from(document.querySelectorAll("select[class='staticSearch.bool']"));
+      //Optional checkbox search filters.
+      this.filterCheckboxes =
+           Array.from(document.querySelectorAll("input[type='checkbox'][class='ssFilter']"));
 
+      //Object for handling filter checkboxes that will only be used if there
+      //are any.
       this.docMetadata = {};
 
-      //A Map object which will be repopulated on every search initiation,
-      //containing the set of active document filters to apply to the search.
-      this.mapActiveFilters = new Map();
-
-      //Any / all selector for combining filters. TODO. MAY NOT BE USED.
+      //Any / all selector for combining filters. TODO.
       this.matchAllFilters = false;
+
+      //Optional type-ahead search filters. NOT IMPLEMENTED IN THE PROJECT YET.
+      this.filterTexts   =
+           Array.from(document.querySelectorAll("input.ssFilter[type='text']"));
 
       //Configuration for phrasal searches if found.
       //Default
@@ -255,14 +248,15 @@ class StaticSearch{
   doSearch(){
     let result = false; //default.
     if (this.parseSearchQuery()){
-      if (this.getActiveFilters()){
-        if (this.writeSearchReport()){
-          this.populateIndex();
-          result = true;
-        }
+      if (this.writeSearchReport()){
+        this.populateIndex();
+        result = true;
       }
     }
-    this.resultsDiv.scrollIntoView();
+    else{
+      //Perhaps there are filters without a search string.
+      this.listDocsByFilters();
+    }
     return result;
   }
 
@@ -270,97 +264,84 @@ class StaticSearch{
 /** @function StaticSearch~parseSearchQuery
   * @description this retrieves the content of the text
   * search box and parses it into an array of term items
-  * ready for analysis against retrieved results. Even if
-  * no search terms are found, it returns true so that filter-only
-  * searches may proceed.
+  * ready for analysis against retrieved results.
   *
-  * @return {Boolean} true if no errors occur, otherwise false.
+  * @return {Boolean} true if terms found, otherwise false.
   */
   parseSearchQuery(){
-    try{
-      let i;
-      //Clear anything in the existing array.
-      this.terms = [];
-      let strSearch = this.queryBox.value;
-      //Start by normalizing whitespace.
-      strSearch = strSearch.replace(/((^\s+)|\s+$)/g, '');
-      strSearch = strSearch.replace(/\s+/g, ' ');
+    let i;
+    //Clear anything in the existing array.
+    this.terms = [];
+    let strSearch = this.queryBox.value;
+    //Start by normalizing whitespace.
+    strSearch = strSearch.replace(/((^\s+)|\s+$)/g, '');
+    strSearch = strSearch.replace(/\s+/g, ' ');
 
-      //Next, replace curly quotes/apostrophes with straight.
-      strSearch = strSearch.replace(/[“”]/g, '"');
-      strSearch = strSearch.replace(/[‘’‛]/g, "'");
+    //Next, replace curly quotes/apostrophes with straight.
+    strSearch = strSearch.replace(/[“”]/g, '"');
+    strSearch = strSearch.replace(/[‘’‛]/g, "'");
 
-      //Strip out all other punctuation
-      strSearch = strSearch.replace(/[\.',!@#$%\^&*]+/, '');
+    //Strip out all other punctuation
+    strSearch = strSearch.replace(/[\.',!@#$%\^&*]+/, '');
 
-      //If we're not supporting phrasal searches, get rid of double quotes.
-      if (!this.allowPhrasal){
-        strSearch = strSearch.replace(/"/g, '');
+    //If we're not supporting phrasal searches, get rid of double quotes.
+    if (!this.allowPhrasal){
+      strSearch = strSearch.replace(/"/g, '');
+    }
+    else{
+    //Get rid of any quote pairs with nothing between them.
+      strSearch = strSearch.replace(/""/g, '');
+    }
+
+    //Now delete any unmatched double quotes.
+    let qCount = 0;
+    let lastQPos = -1;
+    let tmp = '';
+    for (i=0; i<strSearch.length; i++){
+        tmp += strSearch.charAt(i);
+        if (strSearch.charAt(i) === '"'){
+          qCount++;
+          lastQPos = i;
+        }
+    }
+    if (qCount % 2 > 0){
+      strSearch = tmp.substr(0, lastQPos) + tmp.substr(lastQPos + 1, tmp.length);
+    }
+    else{
+      strSearch = tmp;
+    }
+
+    //Put that fixed string back in the box to make
+    //clear to the user what's been understood.
+    this.queryBox.value = strSearch;
+
+    //Now iterate through the string, paying attention
+    //to whether you're inside a quote or not.
+    let inPhrase = false;
+    let strSoFar = '';
+    for (let i=0; i<strSearch.length; i++){
+      let c = strSearch.charAt(i);
+      if (c === '"'){
+        this.addSearchItem(strSoFar, inPhrase);
+        inPhrase = !inPhrase;
+        strSoFar = '';
       }
       else{
-      //Get rid of any quote pairs with nothing between them.
-        strSearch = strSearch.replace(/""/g, '');
-      }
-
-      //Now delete any unmatched double quotes.
-      let qCount = 0;
-      let lastQPos = -1;
-      let tmp = '';
-      for (i=0; i<strSearch.length; i++){
-          tmp += strSearch.charAt(i);
-          if (strSearch.charAt(i) === '"'){
-            qCount++;
-            lastQPos = i;
-          }
-      }
-      if (qCount % 2 > 0){
-        strSearch = tmp.substr(0, lastQPos) + tmp.substr(lastQPos + 1, tmp.length);
-      }
-      else{
-        strSearch = tmp;
-      }
-
-      //Put that fixed string back in the box to make
-      //clear to the user what's been understood.
-      this.queryBox.value = strSearch;
-
-      //Now iterate through the string, paying attention
-      //to whether you're inside a quote or not.
-      let inPhrase = false;
-      let strSoFar = '';
-      for (let i=0; i<strSearch.length; i++){
-        let c = strSearch.charAt(i);
-        if (c === '"'){
-          this.addSearchItem(strSoFar, inPhrase);
-          inPhrase = !inPhrase;
+        if ((c === ' ')&&(!inPhrase)){
+          this.addSearchItem(strSoFar, false);
           strSoFar = '';
         }
         else{
-          if ((c === ' ')&&(!inPhrase)){
-            this.addSearchItem(strSoFar, false);
-            strSoFar = '';
-          }
-          else{
-            strSoFar += c;
-          }
+          strSoFar += c;
         }
       }
-      this.addSearchItem(strSoFar, inPhrase);
-      //We always want to handle the terms in order of
-      //precedence, starting with phrases.
-      this.terms.sort(function(a, b){return a.type - b.type;});
-      console.log(JSON.stringify(this.terms));
-      //return (this.terms.length > 0);
-//Even if we found no terms to search for, we should go
-//ahead with the search, either listing all the documents
-//or listing them based on the filters.
-      return true;
     }
-    catch(e){
-      console.log('ERROR: ' + e.message);
-      return false;
-    }
-
+    this.addSearchItem(strSoFar, inPhrase);
+    //We always want to handle the terms in order of
+    //precedence, starting with phrases.
+    this.terms.sort(function(a, b){return a.type - b.type;});
+    console.log(JSON.stringify(this.terms));
+    return (this.terms.length > 0);
   }
 
 /** @function StaticSearch~addSearchItem
@@ -433,7 +414,7 @@ class StaticSearch{
   listDocsByFilters(){
     var self = this;
 //Check whether we have filters on the page or not.
-    if (this.descFilterCheckboxes.length < 1){
+    if (this.filterCheckboxes.length < 1){
       return false;
     }
 //Check whether any filters have been selected.
@@ -511,8 +492,6 @@ class StaticSearch{
     }
   }
 
-////THIS WILL BECOME OBSOLETE WHEN THE FUNCTION BELOW
-////IT IS WORKING.                        ///////////
 /** @function StaticSearch~getActiveFiltersAsArray
   * @description this function harvests the selected filters
   * in the form of a Map, then transforms the result to
@@ -537,158 +516,6 @@ class StaticSearch{
       }
     }
     return Array.from(filters);
-  }
-
-/** @function StaticSearch~getActiveFilters
-  * @description this function harvests the selected filters
-  * and stores them in the Map object this.mapActiveFilters.
-  * Map entries are keyed by their filter title/caption, and
-  * each entry is an object consisting of a type property
-  * (text, boolean, date) and an array whose contents depend
-  * on the type.
-  *
-  * @return {Boolean} true if succeeded, false if not.
-  */
-    getActiveFilters(){
-
-      try{
-        this.mapActiveFilters.clear();
-
-        //Text label description filters
-        for (let cbx of this.descFilterCheckboxes){
-          if (cbx.checked){
-            let title = cbx.getAttribute('title');
-            let val   = cbx.getAttribute('value');
-            if (this.mapActiveFilters.has(title)){
-              let obj = this.mapActiveFilters.get(title);
-              obj.arr.push(val);
-              this.mapActiveFilters.set(title, obj);
-            }
-            else{
-              this.mapActiveFilters.set(title, {type: 'desc', arr: Array(val)});
-            }
-          }
-        }
-
-        //Date filters
-        for (let txt of this.dateFilterTextboxes){
-          if (txt.value.match(/^\d\d\d\d/)){
-            let title = txt.getAttribute('title');
-            let val = txt.value;
-            let dateType = txt.id.match(/_from/)? '_from' : '_to';
-            this.mapActiveFilters.set(title + dateType, {type: 'date' + dateType, arr: Array(val)});
-          }
-        }
-
-        //Boolean filters
-        for (let sel of this.boolFilterSelects){
-          if (sel.options[sel.selectedIndex].value !== ''){
-            let title = sel.getAttribute('title');
-            let val   = (sel.options[sel.selectedIndex].value == 'true')? true : false;
-            this.mapActiveFilters.set(title, {type: 'bool', arr: Array(val)});
-          }
-        }
-        return true;
-      }
-      catch(e){
-        console.log('Error attempting retrieve active filter settings: ' + e);
-        return false;
-      }
-    }
-
-/** @function StaticSearch~getDocIdsForFilters
-  * @description this function gets the set of currently-configured
-  * filters by calling getActiveFiltersAsMap(), then creates a
-  * set (in the form of an XSet object) of all the document ids
-  * that qualify according to the filters.
-  *
-  * @return {XSet} an XSet object (which might be empty)
-  */
-  getDocIdsForFilters(){
-    this.getActiveFilters();
-    //If we didn't find any filters, return the empty set.
-    if (this.mapActiveFilters.size < 1){
-      return new XSet();
-    }
-    else{
-      //Create an array to hold each of the distinct sets.
-      var xSets = [];
-      var currXSet;
-      for (var [key, value] of this.mapActiveFilters){
-        currXSet = new XSet();
-        switch(value.type){
-          case 'desc':
-            for (let docUri of Object.keys(this.docMetadata)){
-              for (let d of value.arr){
-                if ((this.docMetadata[docUri].descFilters[key] !== null) && (this.docMetadata[docUri].descFilters[key].indexOf(d) > -1)){
-                  currXSet.add(docUri);
-                }
-              }
-            }
-            break;
-          case 'bool':
-            for (let docUri of Object.keys(this.docMetadata)){
-              if ((this.docMetadata[docUri].boolFilters[key] !== null) && (this.docMetadata[docUri].boolFilters[key] === value.arr[0])){
-                currXSet.add(docUri);
-              }
-            }
-            break;
-          case 'date_from':
-            //If it's a date_from, then we can leave partial dates alone, since
-            //the Date() constructor defaults to first month, first day.
-            let fromDate = new Date(value.arr[0]);
-            let fromKey = key.replace(/_from$/, '');
-            for (let docUri of Object.keys(this.docMetadata)){
-              if ((this.docMetadata[docUri].dateFilters[fromKey] !== null) && (new Date(this.docMetadata[docUri].dateFilters[fromKey]) >= fromDate)){
-                currXSet.add(docUri);
-              }
-            }
-            break;
-          case 'date_to':
-            //If it's a date_to, we need to complete partial dates; year-only
-            //dates have -12-31 appended, while year-month dates need to be
-            //incremented by a month and decremented by a day.
-            let txtDate = value.arr[0];
-            switch (txtDate.length){
-              case 10:
-                break;
-              case 4:
-                txtDate = txtDate + '-12-31';
-                break;
-              case 7:
-                //Complicated month stuff. Ignore leap years.
-                txtDate = txtDate.replace(/(\d\d\d\d-)((0[13578])|(1[02]))$/, '$1$2-31').replace(/(\d\d\d\d-)((0[469])|(11))$/, '$1$2-30').replace(/02$/, '02-28');
-                break;
-              default:
-                txtDate = '2050-12-31'; //Random future date.
-            }
-            let toDate = new Date(txtDate);
-            let toKey = key.replace(/_to$/, '');
-            for (let docUri of Object.keys(this.docMetadata)){
-              if ((this.docMetadata[docUri].dateFilters[toKey] !== null) && (new Date(this.docMetadata[docUri].dateFilters[toKey]) <= toDate)){
-                currXSet.add(docUri);
-              }
-            }
-            break;
-          default: console.log('Unknown filter type: ' + value.type);
-        }
-        //console.dir(currXSet);
-        xSets[xSets.length] = currXSet;
-      }
-    }
-    console.log('xSets.length = ' + xSets.length);
-    if (xSets.length > 0){
-      let result = xSets[0];
-      for (var i=1; i<xSets.length; i++){
-        console.dir(result);
-        result = result.xIntersection(xSets[i]);
-      }
-      //console.dir(result);
-      return result;
-    }
-    else{
-      return new XSet();
-    }
   }
 
 /** @function StaticSearch~writeSearchReport
@@ -750,15 +577,14 @@ class StaticSearch{
 /**
   * @function StaticSearch~populateIndex
   * @description The task of this function is basically
-  * to ensure that the index is ready to handle a search, in that
-  * attempts have been made to retrieve all JSON files relating
-  * to the current search, including the docs.json file if that
-  * has not already been retrieved.
-  * The index is deemed ready when either a) all the JSON files
-  * for required tokens have been retrieved and their contents
+  * to ensure that the index is ready to handle a search with
+  * those tokens. The index is deemed ready when either a) the
+  * JSON file for that token has been retrieved and its contents
   * merged into the index, or b) a retrieval has failed, so an
   * empty placeholder has been inserted to signify that there is
-  * no such dataset.
+  * no such dataset. If search filters are also active, the
+  * function checks whether document metadata has been retrieved,
+  * and if not, gets that as well.
   *
   * The function works with fetch and promises, and its final
   * .then() calls the processResults function.
@@ -793,7 +619,7 @@ class StaticSearch{
       //If we do need to retrieve JSON index data, then do it
       if ((tokensToFind.length > 0) || (needDocMetadata)){
 
-        //console.log(JSON.stringify(tokensToFind));
+        console.log(JSON.stringify(tokensToFind));
 
 //Set off fetch operations for the things we don't have yet.
         for (i=0, imax=tokensToFind.length; i<imax; i++){
@@ -914,8 +740,7 @@ class StaticSearch{
 /**
   * @function StaticSearch~docMatchesFilters
   * @description Checks a document against the set of filters to
-  *              determine whether it matches or not. TODO: Add handling
-  *              for date filters to this function.
+  *              determine whether it matches or not.
   * @param {String} docUri id of the document to be checked.
   * @param {Array<Array<string>, <Array>>} filters an array of descriptors
   *                each with an array of values.
@@ -935,7 +760,7 @@ class StaticSearch{
       let fName = f[0];
       let fVals = f[1];
       for (let fVal of fVals){
-        if ((doc.filters[fName] != null) && (doc.filters[fName].indexOf(fVal) > -1)){
+        if (doc[fName].indexOf(fVal) > -1){
           if (!matchAll){
             return true;
           }
@@ -1461,51 +1286,5 @@ class StaticSearch{
         ul.appendChild(li);
       }
       return ul;
-    }
-  }
-
-/** @class XSet
-  * @extends Set
-  * @description This class inherits from the Set class but
-  * adds some key operators which are missing from that class
-  * in the current version of ECMAScript. Those methods are
-  * named with a leading x in case a future version of ECMAScript
-  * adds native versions.
-  */
-  class XSet extends Set{
-    constructor(iterable){
-      super(iterable);
-    }
-/** @function XSet~xUnion
-  * @param {XSet} xSet2 another instance of the XSet class.
-  * @description this computes the union of the two sets (all
-  * items appearing in either set) and returns the result as
-  * another XSet instance.
-  * @return {XSet} a new instance of XSet including all items
-  * from both sets.
-  */
-    xUnion(xSet2){
-      return new XSet([...this, ...xSet2]);
-    }
-/** @function XSet~xIntersection
-  * @param {XSet} xSet2 another instance of the XSet class.
-  * @description this computes the intersection of the two sets
-  * (items appearing in both sets) and returns the result as
-  * another XSet instance.
-  * @return {XSet} a new instance of XSet only the items
-  * appearing in both sets.
-  */
-    xIntersection(xSet2){
-      return new XSet([...this].filter(x => xSet2.has(x)));
-    }
-  /** @function XSet~xDifference
-    * @param {XSet} xSet2 another instance of the XSet class.
-    * @description this computes the set of items which appear
-    * in this set but not in the parameter set.
-    * @return {XSet} a new instance of XSet only the items
-    * which appear in this set but not in xSet2.
-    */
-    xDifference(xSet2){
-      return new XSet([...this].filter(x => !xSet2.has(x)));
     }
   }
