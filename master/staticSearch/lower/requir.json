@@ -1,0 +1,13 @@
+
+  { "token" : "requir",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "requires",
+            "context" : "...Still the process should be semi-labor-intensive, as it <mark>requires<\/mark> the user to configure the collection process....",
+            "weight" : 1 } ] } ] }

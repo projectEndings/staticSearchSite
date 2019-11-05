@@ -1,0 +1,37 @@
+
+  { "token" : "want",
+    "instances" : 
+    [ 
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "want",
+            "context" : "...bits in a document. For instance, we might <mark>want<\/mark> toponyms like Abchurch Lane to be retained...",
+            "weight" : 1 },
+          
+          { "form" : "want",
+            "context" : "We also <mark>want<\/mark> to be able to delete particular nodes...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "replacements",
+        "docTitle" : "Replacements",
+        "docUri" : "replacements.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "want",
+            "context" : "...Here are some words that one might <mark>want<\/mark> to replace,",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "want",
+            "context" : "In any instance, we <mark>want<\/mark> the block-quotation to be the primary part...",
+            "weight" : 1 } ] } ] }

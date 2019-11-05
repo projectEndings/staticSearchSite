@@ -1,0 +1,17 @@
+
+  { "token" : "replac",
+    "instances" : 
+    [ 
+      { "docId" : "replacements",
+        "docTitle" : "Replacements",
+        "docUri" : "replacements.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "Replacements",
+            "context" : "<mark>Replacements<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "replace",
+            "context" : "...are some words that one might want to <mark>replace<\/mark>,",
+            "weight" : 1 } ] } ] }

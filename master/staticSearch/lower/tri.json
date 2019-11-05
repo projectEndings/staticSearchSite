@@ -1,0 +1,13 @@
+
+  { "token" : "tri",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "try",
+            "context" : "...triple hyphenated word: non-government-owned corporations. Thanks Wikipedia! Let's <mark>try<\/mark> this word from the Keats project: death-warrant....",
+            "weight" : 1 } ] } ] }

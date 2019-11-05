@@ -1,0 +1,13 @@
+
+  { "token" : "wikipedia",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Wikipedia",
+            "context" : "...Here's another triple hyphenated word: non-government-owned corporations. Thanks <mark>Wikipedia<\/mark>! Let's try this word from the Keats...",
+            "weight" : 1 } ] } ] }

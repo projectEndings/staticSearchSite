@@ -1,0 +1,13 @@
+
+  { "token" : "worth",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "worth",
+            "context" : "...principally for your Honor, and for Illuſtrating the <mark>worth<\/mark> of that worthy Corporatiõ (whereof you are...",
+            "weight" : 1 } ] } ] }

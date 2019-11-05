@@ -1,0 +1,25 @@
+
+  { "token" : "div",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 4,
+        "contexts" : 
+        [ 
+          { "form" : "div",
+            "context" : "Now let's say you use <mark>div<\/mark> elements instead of paragraphs, but you also...",
+            "weight" : 1 },
+          
+          { "form" : "divs",
+            "context" : "...elements instead of paragraphs, but you also use <mark>divs<\/mark> for editorial notes. But we one might...",
+            "weight" : 1 },
+          
+          { "form" : "divs",
+            "context" : "Creating editorial notes as <mark>divs<\/mark> might have advantanges, but it might also...",
+            "weight" : 1 },
+          
+          { "form" : "divs",
+            "context" : "...editorial notes. But we one might also use <mark>divs<\/mark> as an inline element, which certainly isn't...",
+            "weight" : 1 } ] } ] }

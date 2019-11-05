@@ -1,0 +1,13 @@
+
+  { "token" : "better",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "better",
+            "context" : "...as \"re-sort\" as opposed to \"resort\"), it is <mark>better<\/mark> overall to keep the hyphen out of...",
+            "weight" : 1 } ] } ] }

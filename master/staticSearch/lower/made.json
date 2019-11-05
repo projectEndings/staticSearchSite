@@ -1,0 +1,23 @@
+
+  { "token" : "made",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "made",
+            "context" : "...the Keats project: death-warrant. But neither of these <mark>made<\/mark> up words should work: scooble-scandor.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "made",
+            "context" : "...implementers, but we should handle it gracefully. But <mark>made<\/mark> up words--or missspelled ones--should still end up...",
+            "weight" : 1 } ] } ] }

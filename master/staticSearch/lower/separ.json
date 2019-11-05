@@ -1,0 +1,17 @@
+
+  { "token" : "separ",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "separate",
+            "context" : "...boundaries is challenging. It is quite common for <mark>separate<\/mark> words to be connected with a hyphen:...",
+            "weight" : 1 },
+          
+          { "form" : "separate",
+            "context" : "...While there are some cases where they are <mark>separate<\/mark> words (usually to resolve some ambiguity such...",
+            "weight" : 1 } ] } ] }

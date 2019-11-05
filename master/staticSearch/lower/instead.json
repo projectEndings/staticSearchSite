@@ -1,0 +1,23 @@
+
+  { "token" : "instead",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "instead",
+            "context" : "Sometimes we use double-hyphens <mark>instead<\/mark> of an em-dash for whatever reason--conceivably, the...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "instead",
+            "context" : "...Now let's say you use div elements <mark>instead<\/mark> of paragraphs, but you also use divs...",
+            "weight" : 1 } ] } ] }

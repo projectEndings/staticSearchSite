@@ -1,0 +1,23 @@
+
+  { "token" : "user",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "user",
+            "context" : "...process should be semi-labor-intensive, as it requires the <mark>user<\/mark> to configure the collection process. Note that...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "users",
+            "context" : "...When doing a Whole Word Search or query, <mark>users<\/mark> expect to find the word within those...",
+            "weight" : 1 } ] } ] }

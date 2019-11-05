@@ -1,0 +1,23 @@
+
+  { "token" : "case",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "cases",
+            "context" : "Well-documented use-<mark>cases<\/mark> are important for testing works-in-progress. But semi-automatic...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "cases",
+            "context" : "...word within those hyphens. While there are some <mark>cases<\/mark> where they are separate words (usually to...",
+            "weight" : 1 } ] } ] }

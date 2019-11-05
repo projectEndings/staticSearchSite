@@ -1,0 +1,13 @@
+
+  { "token" : "abl",
+    "instances" : 
+    [ 
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "able",
+            "context" : "We also want to be <mark>able<\/mark> to delete particular nodes from showing up...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "anoth",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "another",
+            "context" : "...on modern English (and not Proto-Indo-European languages). Here's <mark>another<\/mark> triple hyphenated word: non-government-owned corporations. Thanks Wikipedia!...",
+            "weight" : 1 } ] } ] }

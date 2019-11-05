@@ -1,0 +1,13 @@
+
+  { "token" : "collect",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "collection",
+            "context" : "...as it requires the user to configure the <mark>collection<\/mark> process. Note that this process currently works...",
+            "weight" : 1 } ] } ] }

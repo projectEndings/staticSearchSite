@@ -1,0 +1,13 @@
+
+  { "token" : "primari",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "primary",
+            "context" : "...instance, we want the block-quotation to be the <mark>primary<\/mark> part of the search context. Let's take...",
+            "weight" : 1 } ] } ] }

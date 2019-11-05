@@ -1,0 +1,35 @@
+
+  { "token" : "instanc",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 4,
+        "contexts" : 
+        [ 
+          { "form" : "instance",
+            "context" : "In any <mark>instance<\/mark>, we want the block-quotation to be the...",
+            "weight" : 1 },
+          
+          { "form" : "instances",
+            "context" : "There are many <mark>instances<\/mark> of so-called inline quotations that should not...",
+            "weight" : 1 },
+          
+          { "form" : "instance",
+            "context" : "...for some reason, you think a note, for <mark>instance<\/mark>, should be processed as a definable bit...",
+            "weight" : 1 },
+          
+          { "form" : "instance",
+            "context" : "Editorial notes, for <mark>instance<\/mark>, which we will float to the side,...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "instance",
+            "context" : "...or other specialized bits in a document. For <mark>instance<\/mark>, we might want toponyms like Abchurch Lane...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "arbitrari",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "arbitrary",
+            "context" : "...be treated as context bits. Note here that <mark>arbitrary<\/mark> span elements will not be processed. That's...",
+            "weight" : 1 } ] } ] }

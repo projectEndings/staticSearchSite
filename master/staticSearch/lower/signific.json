@@ -1,0 +1,13 @@
+
+  { "token" : "signific",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "significant",
+            "context" : "...hyphen: \"out-of-the-box,\" \"under-the-table,\" \"Italian-American,\" and so on. A <mark>significant<\/mark> number are hyphenated names, such as \"Smith-Hawkins.\"...",
+            "weight" : 1 } ] } ] }

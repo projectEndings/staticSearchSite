@@ -1,0 +1,21 @@
+
+  { "token" : "work",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "works",
+            "context" : "Well-documented use-cases are important for testing <mark>works<\/mark>-in-progress. But semi-automatic process can only go so...",
+            "weight" : 1 },
+          
+          { "form" : "works",
+            "context" : "...the collection process. Note that this process currently <mark>works<\/mark> on modern English (and not Proto-Indo-European languages)....",
+            "weight" : 1 },
+          
+          { "form" : "work",
+            "context" : "...But neither of these made up words should <mark>work<\/mark>: scooble-scandor.",
+            "weight" : 1 } ] } ] }

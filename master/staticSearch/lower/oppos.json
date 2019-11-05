@@ -1,0 +1,13 @@
+
+  { "token" : "oppos",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "opposed",
+            "context" : "...to resolve some ambiguity such as \"re-sort\" as <mark>opposed<\/mark> to \"resort\"), it is better overall to...",
+            "weight" : 1 } ] } ] }

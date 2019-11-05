@@ -1,0 +1,53 @@
+
+  { "token" : "test",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 7,
+        "contexts" : 
+        [ 
+          { "form" : "Tests",
+            "context" : "Context <mark>Tests<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "test",
+            "context" : "Editorial Notes context <mark>test<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "Test",
+            "context" : "Overrides Context <mark>Test<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "testing",
+            "context" : "Some span of text for <mark>testing<\/mark> context ancestors.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 5,
+        "contexts" : 
+        [ 
+          { "form" : "Tests",
+            "context" : "Hyphens <mark>Tests<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "test",
+            "context" : "Hyphens that are really em-dashes <mark>test<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "testing",
+            "context" : "Well-documented use-cases are important for <mark>testing<\/mark> works-in-progress. But semi-automatic process can only go...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "Tests",
+            "context" : "Inline <mark>Tests<\/mark>",
+            "weight" : 2 } ] } ] }

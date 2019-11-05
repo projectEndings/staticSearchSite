@@ -1,0 +1,13 @@
+
+  { "token" : "abil",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "ability",
+            "context" : "...Inuentor of them to that ſeruice, which (my <mark>ability<\/mark> expreſt in this) may call me to...",
+            "weight" : 1 } ] } ] }

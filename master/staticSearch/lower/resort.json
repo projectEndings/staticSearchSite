@@ -1,0 +1,13 @@
+
+  { "token" : "resort",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "\"resort\"",
+            "context" : "...some ambiguity such as \"re-sort\" as opposed to <mark>\"resort\"<\/mark>), it is better overall to keep the...",
+            "weight" : 1 } ] } ] }

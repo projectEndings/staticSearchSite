@@ -1,0 +1,13 @@
+
+  { "token" : "advis",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "advisable",
+            "context" : "...divs as an inline element, which certainly isn't <mark>advisable<\/mark>.",
+            "weight" : 1 } ] } ] }

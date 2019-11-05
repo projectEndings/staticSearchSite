@@ -1,0 +1,21 @@
+
+  { "token" : "paragraph",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "paragraph",
+            "context" : "...part of the search context. Let's take this <mark>paragraph<\/mark> from the Unicode UNICODE TEXT SEGMENTATION standard:...",
+            "weight" : 1 },
+          
+          { "form" : "paragraph",
+            "context" : "...not be processed. That's a break in a <mark>paragraph<\/mark>, which should also be ignored in processing....",
+            "weight" : 1 },
+          
+          { "form" : "paragraphs",
+            "context" : "...let's say you use div elements instead of <mark>paragraphs<\/mark>, but you also use divs for editorial...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,23 @@
+
+  { "token" : "still",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Still",
+            "context" : "...But semi-automatic process can only go so far. <mark>Still<\/mark> the process should be semi-labor-intensive, as it...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "still",
+            "context" : "...it gracefully. But made up words--or missspelled ones--should <mark>still<\/mark> end up in the foreign word list....",
+            "weight" : 1 } ] } ] }

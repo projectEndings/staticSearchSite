@@ -1,0 +1,13 @@
+
+  { "token" : "keep",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "keep",
+            "context" : "...opposed to \"resort\"), it is better overall to <mark>keep<\/mark> the hyphen out of the default definition....",
+            "weight" : 1 } ] } ] }

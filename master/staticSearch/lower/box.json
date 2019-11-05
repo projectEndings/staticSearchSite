@@ -1,0 +1,13 @@
+
+  { "token" : "box",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "box",
+            "context" : "...separate words to be connected with a hyphen: \"out-of-the-<mark>box<\/mark>,\" \"under-the-table,\" \"Italian-American,\" and so on. A significant...",
+            "weight" : 1 } ] } ] }

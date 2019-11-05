@@ -1,0 +1,13 @@
+
+  { "token" : "面倒くさい",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "面倒くさい",
+            "context" : "...never be in the dictionary. This could be <mark>面倒くさい<\/mark> for some implementers, but we should handle...",
+            "weight" : 1 } ] } ] }

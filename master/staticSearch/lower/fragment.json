@@ -1,0 +1,13 @@
+
+  { "token" : "fragment",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "fragments",
+            "context" : "...should also be ignored in processing. Even possible <mark>fragments<\/mark> of words should be ignored.",
+            "weight" : 1 } ] } ] }

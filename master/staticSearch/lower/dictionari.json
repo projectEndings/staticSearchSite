@@ -1,0 +1,13 @@
+
+  { "token" : "dictionari",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "dictionary",
+            "context" : "...where le mot will never be in the <mark>dictionary<\/mark>. This could be 面倒くさい for some implementers,...",
+            "weight" : 1 } ] } ] }

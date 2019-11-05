@@ -1,0 +1,13 @@
+
+  { "token" : "exampl",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "Examples",
+            "context" : "<mark>Examples<\/mark>",
+            "weight" : 2 } ] } ] }
