@@ -26,16 +26,6 @@
             "context" : "Well-<mark>documented<\/mark> use-cases are important for testing works-in-progress. But...",
             "weight" : 1 } ] },
       
-      { "docId" : "search",
-        "docTitle" : "Search",
-        "docUri" : "search.html",
-        "score" : 1,
-        "contexts" : 
-        [ 
-          { "form" : "Document",
-            "context" : " <mark>Document<\/mark> Subject",
-            "weight" : 1 } ] },
-      
       { "docId" : "duplicateFn",
         "docTitle" : "Duplicate Filename",
         "docUri" : "nested\/duplicateFn.html",

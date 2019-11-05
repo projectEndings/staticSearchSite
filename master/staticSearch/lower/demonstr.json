@@ -1,0 +1,13 @@
+
+  { "token" : "demonstr",
+    "instances" : 
+    [ 
+      { "docId" : "search",
+        "docTitle" : "Search Page",
+        "docUri" : "search.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "demonstration",
+            "context" : "This is the static search engine <mark>demonstration<\/mark>.",
+            "weight" : 1 } ] } ] }
