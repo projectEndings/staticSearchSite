@@ -2,24 +2,6 @@
   { "token" : "search",
     "instances" : 
     [ 
-      { "docId" : "search",
-        "docTitle" : "Search Page",
-        "docUri" : "search.html",
-        "score" : 4,
-        "contexts" : 
-        [ 
-          { "form" : "Search",
-            "context" : "Static <mark>Search<\/mark>",
-            "weight" : 2 },
-          
-          { "form" : "search",
-            "context" : "This is the static <mark>search<\/mark> engine demonstration.",
-            "weight" : 1 },
-          
-          { "form" : "Search",
-            "context" : "<mark>Search<\/mark> ",
-            "weight" : 1 } ] },
-      
       { "docId" : "contexts",
         "docTitle" : "Contexts Test",
         "docUri" : "contexts.html",
@@ -32,4 +14,14 @@
           
           { "form" : "Search",
             "context" : "...such as \"Smith-Hawkins.\" When doing a Whole Word <mark>Search<\/mark> or query, users expect to find the...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "search",
+        "docTitle" : "Search",
+        "docUri" : "search.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Search",
+            "context" : "<mark>Search<\/mark> ",
             "weight" : 1 } ] } ] }

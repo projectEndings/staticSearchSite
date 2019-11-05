@@ -74,6 +74,16 @@
             "context" : "...for whatever reason--conceivably, the tokenizer should skip double <mark>hyphens<\/mark>.",
             "weight" : 1 } ] },
       
+      { "docId" : "search",
+        "docTitle" : "Search",
+        "docUri" : "search.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Hyphenation",
+            "context" : "<mark>Hyphenation<\/mark>",
+            "weight" : 1 } ] },
+      
       { "docId" : "inlines",
         "docTitle" : "inlines",
         "docUri" : "inlines.html",
