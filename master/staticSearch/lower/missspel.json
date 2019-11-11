@@ -1,0 +1,13 @@
+
+  { "token" : "missspel",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "missspelled",
+            "context" : "...should handle it gracefully. But made up words--or <mark>missspelled<\/mark> ones--should still end up in the foreign...",
+            "weight" : 1 } ] } ] }

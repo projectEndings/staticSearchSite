@@ -1,0 +1,13 @@
+
+  { "token" : "humbl",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "humbly",
+            "context" : "...Corporatiõ (whereof you are a Member) come now <mark>humbly<\/mark> to kiſſe your Lordſhips handes; and to...",
+            "weight" : 1 } ] } ] }

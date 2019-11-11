@@ -1,0 +1,13 @@
+
+  { "token" : "could",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "could",
+            "context" : "...mot will never be in the dictionary. This <mark>could<\/mark> be 面倒くさい for some implementers, but we...",
+            "weight" : 1 } ] } ] }

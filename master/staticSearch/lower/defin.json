@@ -1,0 +1,13 @@
+
+  { "token" : "defin",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "definable",
+            "context" : "...note, for instance, should be processed as a <mark>definable<\/mark> bit then it will be so. This...",
+            "weight" : 1 } ] } ] }

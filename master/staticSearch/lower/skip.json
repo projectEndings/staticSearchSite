@@ -1,0 +1,13 @@
+
+  { "token" : "skip",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "skip",
+            "context" : "...an em-dash for whatever reason--conceivably, the tokenizer should <mark>skip<\/mark> double hyphens.",
+            "weight" : 1 } ] } ] }

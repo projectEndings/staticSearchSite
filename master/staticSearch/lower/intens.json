@@ -1,0 +1,13 @@
+
+  { "token" : "intens",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "intensive",
+            "context" : "...go so far. Still the process should be semi-labor-<mark>intensive<\/mark>, as it requires the user to configure...",
+            "weight" : 1 } ] } ] }

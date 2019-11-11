@@ -1,0 +1,63 @@
+
+  { "token" : "context",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 12,
+        "contexts" : 
+        [ 
+          { "form" : "Context",
+            "context" : "<mark>Context<\/mark> Tests",
+            "weight" : 2 },
+          
+          { "form" : "context",
+            "context" : "Editorial Notes <mark>context<\/mark> test",
+            "weight" : 2 },
+          
+          { "form" : "Context",
+            "context" : "Overrides <mark>Context<\/mark> Test",
+            "weight" : 2 },
+          
+          { "form" : "context",
+            "context" : "...Some span of text for testing <mark>context<\/mark> ancestors.",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...to be the primary part of the search <mark>context<\/mark>. Let's take this paragraph from the Unicode...",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...The correct interpretation of hyphens in the <mark>context<\/mark> of word boundaries is challenging. It is...",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...inline quotations that should not be treated as <mark>context<\/mark> bits. Note here that arbitrary span elements...",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...float to the side, should have their own <mark>context<\/mark>.",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...be ignored from the other processing, too, for <mark>context<\/mark>, methinks.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "context",
+            "context" : "...flow. The exception here are words that are <mark>context<\/mark> nodes such as this one or other...",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...Abchurch Lane to be retained not as a <mark>context<\/mark> node necessarily, but as an important node...",
+            "weight" : 1 },
+          
+          { "form" : "context",
+            "context" : "...nodes from showing up in the keyword in <mark>context<\/mark> view.",
+            "weight" : 1 } ] } ] }

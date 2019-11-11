@@ -1,0 +1,23 @@
+
+  { "token" : "call",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "called",
+            "context" : "There are many instances of so-<mark>called<\/mark> inline quotations that should not be treated...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "call",
+            "context" : "...ſeruice, which (my ability expreſt in this) may <mark>call<\/mark> me to (vnder your Lordſhips",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,85 @@
+
+  { "token" : "hyphen",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 10,
+        "contexts" : 
+        [ 
+          { "form" : "hyphens",
+            "context" : "The correct interpretation of <mark>hyphens<\/mark> in the context of word boundaries is...",
+            "weight" : 1 },
+          
+          { "form" : "hyphen",
+            "context" : "...for separate words to be connected with a <mark>hyphen<\/mark>: \"out-of-the-box,\" \"under-the-table,\" \"Italian-American,\" and so on. A...",
+            "weight" : 1 },
+          
+          { "form" : "hyphenated",
+            "context" : "...\"Italian-American,\" and so on. A significant number are <mark>hyphenated<\/mark> names, such as \"Smith-Hawkins.\" When doing a...",
+            "weight" : 1 },
+          
+          { "form" : "hyphens",
+            "context" : "...users expect to find the word within those <mark>hyphens<\/mark>. While there are some cases where they...",
+            "weight" : 1 },
+          
+          { "form" : "hyphen",
+            "context" : "...\"resort\"), it is better overall to keep the <mark>hyphen<\/mark> out of the default definition. Hyphens include...",
+            "weight" : 1 },
+          
+          { "form" : "Hyphens",
+            "context" : "...keep the hyphen out of the default definition. <mark>Hyphens<\/mark> include U+002D HYPHEN-MINUS, U+2010 HYPHEN, possibly also...",
+            "weight" : 1 },
+          
+          { "form" : "HYPHEN",
+            "context" : "...out of the default definition. Hyphens include U+002D <mark>HYPHEN<\/mark>-MINUS, U+2010 HYPHEN, possibly also U+058A ARMENIAN HYPHEN,...",
+            "weight" : 1 },
+          
+          { "form" : "HYPHEN",
+            "context" : "...the default definition. Hyphens include U+002D HYPHEN-MINUS, U+2010 <mark>HYPHEN<\/mark>, possibly also U+058A ARMENIAN HYPHEN, and U+30A0...",
+            "weight" : 1 },
+          
+          { "form" : "HYPHEN",
+            "context" : "...U+002D HYPHEN-MINUS, U+2010 HYPHEN, possibly also U+058A ARMENIAN <mark>HYPHEN<\/mark>, and U+30A0 KATAKANA-HIRAGANA DOUBLE HYPHEN.",
+            "weight" : 1 },
+          
+          { "form" : "HYPHEN",
+            "context" : "...also U+058A ARMENIAN HYPHEN, and U+30A0 KATAKANA-HIRAGANA DOUBLE <mark>HYPHEN<\/mark>.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 7,
+        "contexts" : 
+        [ 
+          { "form" : "Hyphens",
+            "context" : "<mark>Hyphens<\/mark> Tests",
+            "weight" : 2 },
+          
+          { "form" : "Hyphens",
+            "context" : "<mark>Hyphens<\/mark> that are really em-dashes test",
+            "weight" : 2 },
+          
+          { "form" : "hyphenated",
+            "context" : "...English (and not Proto-Indo-European languages). Here's another triple <mark>hyphenated<\/mark> word: non-government-owned corporations. Thanks Wikipedia! Let's try...",
+            "weight" : 1 },
+          
+          { "form" : "hyphens",
+            "context" : "Sometimes we use double-<mark>hyphens<\/mark> instead of an em-dash for whatever reason--conceivably,...",
+            "weight" : 1 },
+          
+          { "form" : "hyphens",
+            "context" : "...for whatever reason--conceivably, the tokenizer should skip double <mark>hyphens<\/mark>.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "hyphenated",
+            "context" : "...Now, one wonders what we should do with <mark>hyphenated<\/mark> constructs, like",
+            "weight" : 1 } ] } ] }

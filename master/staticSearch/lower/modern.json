@@ -1,0 +1,13 @@
+
+  { "token" : "modern",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "modern",
+            "context" : "...process. Note that this process currently works on <mark>modern<\/mark> English (and not Proto-Indo-European languages). Here's another...",
+            "weight" : 1 } ] } ] }

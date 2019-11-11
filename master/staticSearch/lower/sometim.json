@@ -1,0 +1,13 @@
+
+  { "token" : "sometim",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Sometimes",
+            "context" : "<mark>Sometimes<\/mark> we use double-hyphens instead of an em-dash...",
+            "weight" : 1 } ] } ] }

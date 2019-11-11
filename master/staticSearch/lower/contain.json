@@ -1,0 +1,37 @@
+
+  { "token" : "contain",
+    "instances" : 
+    [ 
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "contains",
+            "context" : "This document <mark>contains<\/mark> a number of inline elements, which should...",
+            "weight" : 1 },
+          
+          { "form" : "contained",
+            "context" : "Here is a \"word\" <mark>contained<\/mark> in quotation marks; for our process of...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "noTitleNoId",
+        "docTitle" : "noTitleNoId",
+        "docUri" : "noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "contain",
+            "context" : "This document doesn't <mark>contain<\/mark> a title, so we must construct one...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "contains",
+            "context" : "This part of the document <mark>contains<\/mark> blockquotes.",
+            "weight" : 1 } ] } ] }

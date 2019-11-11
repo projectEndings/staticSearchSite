@@ -1,0 +1,13 @@
+
+  { "token" : "well",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Well",
+            "context" : "<mark>Well<\/mark>-documented use-cases are important for testing works-in-progress. But...",
+            "weight" : 1 } ] } ] }

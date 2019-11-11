@@ -1,0 +1,13 @@
+
+  { "token" : "present",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "preſent",
+            "context" : "...humbly to kiſſe your Lordſhips handes; and to <mark>preſent<\/mark> the Inuentor of them to that ſeruice,...",
+            "weight" : 1 } ] } ] }

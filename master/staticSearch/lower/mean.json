@@ -1,0 +1,13 @@
+
+  { "token" : "mean",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "means",
+            "context" : "...definable bit then it will be so. This <mark>means<\/mark> that editorial notes will be ignored from...",
+            "weight" : 1 } ] } ] }

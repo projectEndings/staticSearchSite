@@ -1,0 +1,13 @@
+
+  { "token" : "scoobl",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "scooble",
+            "context" : "...neither of these made up words should work: <mark>scooble<\/mark>-scandor.",
+            "weight" : 1 } ] } ] }

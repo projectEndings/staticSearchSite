@@ -1,0 +1,13 @@
+
+  { "token" : "stemmer",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "stemmer",
+            "context" : "Our <mark>stemmer<\/mark> has to handle constructs like:",
+            "weight" : 1 } ] } ] }

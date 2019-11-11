@@ -1,0 +1,21 @@
+
+  { "token" : "ignor",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "ignored",
+            "context" : "...break in a paragraph, which should also be <mark>ignored<\/mark> in processing. Even possible fragments of words...",
+            "weight" : 1 },
+          
+          { "form" : "ignored",
+            "context" : "...processing. Even possible fragments of words should be <mark>ignored<\/mark>.",
+            "weight" : 1 },
+          
+          { "form" : "ignored",
+            "context" : "...so. This means that editorial notes will be <mark>ignored<\/mark> from the other processing, too, for context,...",
+            "weight" : 1 } ] } ] }

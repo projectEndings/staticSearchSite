@@ -1,0 +1,31 @@
+
+  { "token" : "quotat",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 4,
+        "contexts" : 
+        [ 
+          { "form" : "Quotation",
+            "context" : "Block <mark>Quotation<\/mark>",
+            "weight" : 2 },
+          
+          { "form" : "quotation",
+            "context" : "In any instance, we want the block-<mark>quotation<\/mark> to be the primary part of the...",
+            "weight" : 1 },
+          
+          { "form" : "quotations",
+            "context" : "...There are many instances of so-called inline <mark>quotations<\/mark> that should not be treated as context...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "quotation",
+            "context" : "Here is a \"word\" contained in <mark>quotation<\/mark> marks; for our process of \"Porter\"ing. Now,...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "illustr",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Illuſtrating",
+            "context" : "...were intẽded principally for your Honor, and for <mark>Illuſtrating<\/mark> the worth of that worthy Corporatiõ (whereof...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "appear",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "appear",
+            "context" : "Foreign languages can <mark>appear<\/mark> often through out texts, where le mot...",
+            "weight" : 1 } ] } ] }
