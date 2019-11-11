@@ -1,0 +1,13 @@
+
+  { "token" : "higher",
+    "instances" : 
+    [ 
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "higher",
+            "context" : "...node necessarily, but as an important node with <mark>higher<\/mark> weight.",
+            "weight" : 1 } ] } ] }

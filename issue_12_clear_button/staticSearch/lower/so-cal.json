@@ -1,0 +1,13 @@
+
+  { "token" : "so-cal",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "so-called",
+            "context" : "There are many instances of <mark>so-called<\/mark> inline quotations that should not be treated...",
+            "weight" : 1 } ] } ] }

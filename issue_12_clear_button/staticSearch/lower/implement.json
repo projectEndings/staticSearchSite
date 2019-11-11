@@ -1,0 +1,13 @@
+
+  { "token" : "implement",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "implementers",
+            "context" : "...the dictionary. This could be 面倒くさい for some <mark>implementers<\/mark>, but we should handle it gracefully. But...",
+            "weight" : 1 } ] } ] }

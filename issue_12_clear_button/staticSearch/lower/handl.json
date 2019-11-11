@@ -1,0 +1,17 @@
+
+  { "token" : "handl",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "handle",
+            "context" : "...be 面倒くさい for some implementers, but we should <mark>handle<\/mark> it gracefully. But made up words--or missspelled...",
+            "weight" : 1 },
+          
+          { "form" : "handle",
+            "context" : "Our stemmer has to <mark>handle<\/mark> constructs like:",
+            "weight" : 1 } ] } ] }

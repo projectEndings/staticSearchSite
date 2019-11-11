@@ -1,0 +1,17 @@
+
+  { "token" : "possibl",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "possibly",
+            "context" : "...default definition. Hyphens include U+002D HYPHEN-MINUS, U+2010 HYPHEN, <mark>possibly<\/mark> also U+058A ARMENIAN HYPHEN, and U+30A0 KATAKANA-HIRAGANA...",
+            "weight" : 1 },
+          
+          { "form" : "possible",
+            "context" : "...which should also be ignored in processing. Even <mark>possible<\/mark> fragments of words should be ignored.",
+            "weight" : 1 } ] } ] }

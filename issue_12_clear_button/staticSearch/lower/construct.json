@@ -1,0 +1,37 @@
+
+  { "token" : "construct",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "constructs",
+            "context" : "Our stemmer has to handle <mark>constructs<\/mark> like:",
+            "weight" : 1 },
+          
+          { "form" : "constructs",
+            "context" : "But not <mark>constructs<\/mark> for elements like <blockquote> or this &...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "noTitleNoId",
+        "docTitle" : "noTitleNoId",
+        "docUri" : "noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "construct",
+            "context" : "...document doesn't contain a title, so we must <mark>construct<\/mark> one from its path.",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "constructs",
+            "context" : "...one wonders what we should do with hyphenated <mark>constructs<\/mark>, like",
+            "weight" : 1 } ] } ] }

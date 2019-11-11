@@ -1,0 +1,13 @@
+
+  { "token" : "challeng",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "challenging",
+            "context" : "...hyphens in the context of word boundaries is <mark>challenging<\/mark>. It is quite common for separate words...",
+            "weight" : 1 } ] } ] }

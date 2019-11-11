@@ -1,0 +1,23 @@
+
+  { "token" : "languag",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "languages",
+            "context" : "...currently works on modern English (and not Proto-Indo-European <mark>languages<\/mark>). Here's another triple hyphenated word: non-government-owned corporations....",
+            "weight" : 1 } ] },
+      
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "languages",
+            "context" : "Foreign <mark>languages<\/mark> can appear often through out texts, where...",
+            "weight" : 1 } ] } ] }

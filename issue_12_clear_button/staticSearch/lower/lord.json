@@ -1,0 +1,13 @@
+
+  { "token" : "lord",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Lord",
+            "context" : "MY Worthy <mark>Lord<\/mark>, theſe preſentmentes which were intẽded principally for...",
+            "weight" : 1 } ] } ] }

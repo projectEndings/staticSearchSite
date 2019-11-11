@@ -1,0 +1,13 @@
+
+  { "token" : "princip",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "principally",
+            "context" : "...MY Worthy Lord, theſe preſentmentes which were intẽded <mark>principally<\/mark> for your Honor, and for Illuſtrating the...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,17 @@
+
+  { "token" : "span",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "span",
+            "context" : "Some <mark>span<\/mark> of text for testing context ancestors....",
+            "weight" : 1 },
+          
+          { "form" : "span",
+            "context" : "...treated as context bits. Note here that arbitrary <mark>span<\/mark> elements will not be processed. That's a...",
+            "weight" : 1 } ] } ] }

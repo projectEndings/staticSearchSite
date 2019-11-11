@@ -1,0 +1,13 @@
+
+  { "token" : "isn",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "isn",
+            "context" : "...use divs as an inline element, which certainly <mark>isn<\/mark>'t advisable.",
+            "weight" : 1 } ] } ] }

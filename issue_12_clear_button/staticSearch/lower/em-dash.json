@@ -1,0 +1,17 @@
+
+  { "token" : "em-dash",
+    "instances" : 
+    [ 
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "em-dashes",
+            "context" : "Hyphens that are really <mark>em-dashes<\/mark> test",
+            "weight" : 2 },
+          
+          { "form" : "em-dash",
+            "context" : "...Sometimes we use double-hyphens instead of an <mark>em-dash<\/mark> for whatever reason--conceivably, the tokenizer should skip...",
+            "weight" : 1 } ] } ] }

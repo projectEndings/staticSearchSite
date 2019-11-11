@@ -1,0 +1,35 @@
+
+  { "token" : "use",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "use",
+            "context" : "Now let's say you <mark>use<\/mark> div elements instead of paragraphs, but you...",
+            "weight" : 1 },
+          
+          { "form" : "use",
+            "context" : "...div elements instead of paragraphs, but you also <mark>use<\/mark> divs for editorial notes. But we one...",
+            "weight" : 1 },
+          
+          { "form" : "use",
+            "context" : "...for editorial notes. But we one might also <mark>use<\/mark> divs as an inline element, which certainly...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "hyphens",
+        "docTitle" : "Hypens Test",
+        "docUri" : "hyphens.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "use",
+            "context" : "Well-documented <mark>use<\/mark>-cases are important for testing works-in-progress. But semi-automatic...",
+            "weight" : 1 },
+          
+          { "form" : "use",
+            "context" : "Sometimes we <mark>use<\/mark> double-hyphens instead of an em-dash for whatever...",
+            "weight" : 1 } ] } ] }

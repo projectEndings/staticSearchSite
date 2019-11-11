@@ -1,0 +1,13 @@
+
+  { "token" : "end",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "end",
+            "context" : "...gracefully. But made up words--or missspelled ones--should still <mark>end<\/mark> up in the foreign word list.",
+            "weight" : 1 } ] } ] }

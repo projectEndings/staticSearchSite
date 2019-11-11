@@ -1,0 +1,13 @@
+
+  { "token" : "must",
+    "instances" : 
+    [ 
+      { "docId" : "noTitleNoId",
+        "docTitle" : "noTitleNoId",
+        "docUri" : "noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "must",
+            "context" : "...This document doesn't contain a title, so we <mark>must<\/mark> construct one from its path.",
+            "weight" : 1 } ] } ] }

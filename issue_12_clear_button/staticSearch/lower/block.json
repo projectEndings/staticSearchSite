@@ -1,0 +1,17 @@
+
+  { "token" : "block",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "Block",
+            "context" : "<mark>Block<\/mark> Quotation",
+            "weight" : 2 },
+          
+          { "form" : "block",
+            "context" : "In any instance, we want the <mark>block<\/mark>-quotation to be the primary part of the...",
+            "weight" : 1 } ] } ] }

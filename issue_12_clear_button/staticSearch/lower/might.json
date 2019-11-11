@@ -1,0 +1,41 @@
+
+  { "token" : "might",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 3,
+        "contexts" : 
+        [ 
+          { "form" : "might",
+            "context" : "Creating editorial notes as divs <mark>might<\/mark> have advantanges, but it might also be...",
+            "weight" : 1 },
+          
+          { "form" : "might",
+            "context" : "...notes as divs might have advantanges, but it <mark>might<\/mark> also be superfluous.",
+            "weight" : 1 },
+          
+          { "form" : "might",
+            "context" : "...use divs for editorial notes. But we one <mark>might<\/mark> also use divs as an inline element,...",
+            "weight" : 1 } ] },
+      
+      { "docId" : "replacements",
+        "docTitle" : "Replacements",
+        "docUri" : "replacements.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "might",
+            "context" : "Here are some words that one <mark>might<\/mark> want to replace,",
+            "weight" : 1 } ] },
+      
+      { "docId" : "inlines",
+        "docTitle" : "inlines",
+        "docUri" : "inlines.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "might",
+            "context" : "...specialized bits in a document. For instance, we <mark>might<\/mark> want toponyms like Abchurch Lane to be...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,13 @@
+
+  { "token" : "ambigu",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "ambiguity",
+            "context" : "...they are separate words (usually to resolve some <mark>ambiguity<\/mark> such as \"re-sort\" as opposed to \"resort\"),...",
+            "weight" : 1 } ] } ] }

@@ -1,0 +1,17 @@
+
+  { "token" : "worthi",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 2,
+        "contexts" : 
+        [ 
+          { "form" : "Worthy",
+            "context" : "MY <mark>Worthy<\/mark> Lord, theſe preſentmentes which were intẽded principally...",
+            "weight" : 1 },
+          
+          { "form" : "worthy",
+            "context" : "...Honor, and for Illuſtrating the worth of that <mark>worthy<\/mark> Corporatiõ (whereof you are a Member) come...",
+            "weight" : 1 } ] } ] }

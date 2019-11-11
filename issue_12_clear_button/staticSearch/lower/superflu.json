@@ -1,0 +1,13 @@
+
+  { "token" : "superflu",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "superfluous",
+            "context" : "...might have advantanges, but it might also be <mark>superfluous<\/mark>.",
+            "weight" : 1 } ] } ] }

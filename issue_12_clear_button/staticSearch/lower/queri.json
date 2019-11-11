@@ -1,0 +1,13 @@
+
+  { "token" : "queri",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "query",
+            "context" : "...\"Smith-Hawkins.\" When doing a Whole Word Search or <mark>query<\/mark>, users expect to find the word within...",
+            "weight" : 1 } ] } ] }

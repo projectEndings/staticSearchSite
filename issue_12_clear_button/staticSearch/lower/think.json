@@ -1,0 +1,13 @@
+
+  { "token" : "think",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "think",
+            "context" : "But if, for some reason, you <mark>think<\/mark> a note, for instance, should be processed...",
+            "weight" : 1 } ] } ] }

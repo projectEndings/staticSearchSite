@@ -1,0 +1,13 @@
+
+  { "token" : "inuentor",
+    "instances" : 
+    [ 
+      { "docId" : "foreign",
+        "docTitle" : "Foreign Languages",
+        "docUri" : "foreign.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "Inuentor",
+            "context" : "...kiſſe your Lordſhips handes; and to preſent the <mark>Inuentor<\/mark> of them to that ſeruice, which (my...",
+            "weight" : 1 } ] } ] }

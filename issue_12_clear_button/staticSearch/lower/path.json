@@ -1,0 +1,13 @@
+
+  { "token" : "path",
+    "instances" : 
+    [ 
+      { "docId" : "noTitleNoId",
+        "docTitle" : "noTitleNoId",
+        "docUri" : "noTitleNoId.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "path",
+            "context" : "...title, so we must construct one from its <mark>path<\/mark>.",
+            "weight" : 1 } ] } ] }

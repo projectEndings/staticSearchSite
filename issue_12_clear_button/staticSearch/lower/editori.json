@@ -1,0 +1,29 @@
+
+  { "token" : "editori",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 6,
+        "contexts" : 
+        [ 
+          { "form" : "Editorial",
+            "context" : "<mark>Editorial<\/mark> Notes context test",
+            "weight" : 2 },
+          
+          { "form" : "Editorial",
+            "context" : "<mark>Editorial<\/mark> notes, for instance, which we will float...",
+            "weight" : 1 },
+          
+          { "form" : "editorial",
+            "context" : "...then it will be so. This means that <mark>editorial<\/mark> notes will be ignored from the other...",
+            "weight" : 1 },
+          
+          { "form" : "editorial",
+            "context" : "...of paragraphs, but you also use divs for <mark>editorial<\/mark> notes. But we one might also use...",
+            "weight" : 1 },
+          
+          { "form" : "editorial",
+            "context" : "Creating <mark>editorial<\/mark> notes as divs might have advantanges, but...",
+            "weight" : 1 } ] } ] }
