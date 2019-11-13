@@ -11,5 +11,4 @@
         "verbose" : "true",
         "stopwordsFile" : "xsl\/english_stopwords.txt",
         "dictionaryFile" : "xsl\/english_words.txt",
-        "replacementsFile" : "xsl\/replacements.txt",
         "indentJSON" : "true" } ] }
