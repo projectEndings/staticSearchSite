@@ -1,6 +1,5 @@
 
   { "hyphens.html" : 
-    { "docTitle" : "Hypens Test",
-      "descFilters" : 
+    { "descFilters" : 
       { "Document Subject" : 
         [ "Hyphenation" ] } } }
