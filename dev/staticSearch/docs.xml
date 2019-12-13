@@ -3,7 +3,7 @@
    <map key="hyphens.html">
       <string key="docTitle">Hypens Test</string>
       <map key="descFilters">
-         <array key="ssDesc1">
+         <array key="Document Subject">
             <string>Hyphenation</string>
          </array>
       </map>

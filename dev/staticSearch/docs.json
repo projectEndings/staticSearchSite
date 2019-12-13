@@ -2,7 +2,7 @@
   { "hyphens.html" : 
     { "docTitle" : "Hypens Test",
       "descFilters" : 
-      { "ssDesc1" : 
+      { "Document Subject" : 
         [ "Hyphenation" ] },
       "dateFilters" : 
       {  },
