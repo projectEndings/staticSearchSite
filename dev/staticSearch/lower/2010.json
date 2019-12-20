@@ -1,0 +1,13 @@
+
+  { "token" : "2010",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "2010",
+            "context" : "...of the default definition. Hyphens include U+002D HYPHEN-MINUS, U+<mark>2010<\/mark> HYPHEN, possibly also U+058A ARMENIAN HYPHEN, and...",
+            "weight" : 1 } ] } ] }

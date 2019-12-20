@@ -1,0 +1,13 @@
+
+  { "token" : "058",
+    "instances" : 
+    [ 
+      { "docId" : "contexts",
+        "docTitle" : "Contexts Test",
+        "docUri" : "contexts.html",
+        "score" : 1,
+        "contexts" : 
+        [ 
+          { "form" : "058",
+            "context" : "...Hyphens include U+002D HYPHEN-MINUS, U+2010 HYPHEN, possibly also U+<mark>058<\/mark>A ARMENIAN HYPHEN, and U+30A0 KATAKANA-HIRAGANA DOUBLE HYPHEN....",
+            "weight" : 1 } ] } ] }
