@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "inlines",
-        "docTitle" : "inlines",
         "docUri" : "inlines.html",
         "score" : 2,
         "contexts" : 
@@ -17,7 +16,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "hyphens",
-        "docTitle" : "Hypens Test",
         "docUri" : "hyphens.html",
         "score" : 1,
         "contexts" : 
@@ -27,7 +25,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "duplicateFn",
-        "docTitle" : "Duplicate Filename",
         "docUri" : "nested\/duplicateFn.html",
         "score" : 1,
         "contexts" : 
@@ -37,7 +34,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "noTitleNoId",
-        "docTitle" : "noTitleNoId",
         "docUri" : "noTitleNoId.html",
         "score" : 1,
         "contexts" : 
@@ -47,7 +43,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "contexts",
-        "docTitle" : "Contexts Test",
         "docUri" : "contexts.html",
         "score" : 1,
         "contexts" : 
@@ -57,7 +52,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "noid",
-        "docTitle" : "No Id Document",
         "docUri" : "noid.html",
         "score" : 1,
         "contexts" : 
@@ -67,7 +61,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "duplicateFn",
-        "docTitle" : "Duplicate Filename",
         "docUri" : "duplicateFn.html",
         "score" : 1,
         "contexts" : 
@@ -77,7 +70,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "nested_nested_noId",
-        "docTitle" : "Nested Test",
         "docUri" : "nested\/nested_noId.html",
         "score" : 1,
         "contexts" : 
@@ -87,7 +79,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "nested_nested_noTitleNoId",
-        "docTitle" : "nested_nested_noTitleNoId",
         "docUri" : "nested\/nested_noTitleNoId.html",
         "score" : 1,
         "contexts" : 

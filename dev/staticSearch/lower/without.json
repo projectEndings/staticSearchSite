@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "noid",
-        "docTitle" : "No Id Document",
         "docUri" : "noid.html",
         "score" : 1,
         "contexts" : 

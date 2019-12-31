@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "inlines",
-        "docTitle" : "inlines",
         "docUri" : "inlines.html",
         "score" : 1,
         "contexts" : 

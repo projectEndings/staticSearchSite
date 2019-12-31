@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "nested_withId",
-        "docTitle" : "Nested HTML (with id)",
         "docUri" : "nested\/nested_withId.html",
         "score" : 1,
         "contexts" : 

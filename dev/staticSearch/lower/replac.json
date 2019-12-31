@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "replacements",
-        "docTitle" : "Replacements",
         "docUri" : "replacements.html",
         "score" : 3,
         "contexts" : 

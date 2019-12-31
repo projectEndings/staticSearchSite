@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "hyphens",
-        "docTitle" : "Hypens Test",
         "docUri" : "hyphens.html",
         "score" : 2,
         "contexts" : 

@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "contexts",
-        "docTitle" : "Contexts Test",
         "docUri" : "contexts.html",
         "score" : 12,
         "contexts" : 
@@ -45,7 +44,6 @@
             "weight" : 1 } ] },
       
       { "docId" : "inlines",
-        "docTitle" : "inlines",
         "docUri" : "inlines.html",
         "score" : 3,
         "contexts" : 

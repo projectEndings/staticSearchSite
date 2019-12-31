@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "foreign",
-        "docTitle" : "Foreign Languages",
         "docUri" : "foreign.html",
         "score" : 1,
         "contexts" : 

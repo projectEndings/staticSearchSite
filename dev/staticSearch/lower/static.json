@@ -3,7 +3,6 @@
     "instances" : 
     [ 
       { "docId" : "search",
-        "docTitle" : "Search Page",
         "docUri" : "search.html",
         "score" : 3,
         "contexts" : 
