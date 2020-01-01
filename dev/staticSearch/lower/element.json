@@ -16,7 +16,7 @@
             "weight" : 1 },
           
           { "form" : "element",
-            "context" : "inline <mark>element<\/mark>",
+            "context" : "...one might also use divs as an inline <mark>element<\/mark>, which certainly isn't advisable.",
             "weight" : 1 } ] },
       
       { "docId" : "foreign",
