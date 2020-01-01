@@ -16,7 +16,7 @@
             "weight" : 1 },
           
           { "form" : "use",
-            "context" : "...for editorial notes. But we one might also <mark>use<\/mark> divs as an inline element, which certainly...",
+            "context" : "...for editorial notes. But we one might also <mark>use<\/mark> divs as an , which certainly isn't...",
             "weight" : 1 } ] },
       
       { "docId" : "hyphens",

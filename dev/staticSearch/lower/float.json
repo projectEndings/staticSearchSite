@@ -8,5 +8,5 @@
         "contexts" : 
         [ 
           { "form" : "float",
-            "context" : "...Editorial notes, for instance, which we will <mark>float<\/mark> to the side, should have their own...",
+            "context" : "...so. Editorial notes, for instance, which we will <mark>float<\/mark> to the side, should have their own...",
             "weight" : 1 } ] } ] }

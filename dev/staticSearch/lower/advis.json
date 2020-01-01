@@ -8,5 +8,5 @@
         "contexts" : 
         [ 
           { "form" : "advisable",
-            "context" : "...divs as an inline element, which certainly isn't <mark>advisable<\/mark>.",
+            "context" : "...use divs as an , which certainly isn't <mark>advisable<\/mark>.",
             "weight" : 1 } ] } ] }

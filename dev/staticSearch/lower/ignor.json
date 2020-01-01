@@ -16,5 +16,5 @@
             "weight" : 1 },
           
           { "form" : "ignored",
-            "context" : "...so. This means that editorial notes will be <mark>ignored<\/mark> from the other processing, too, for context,...",
+            "context" : "...context. This means that editorial notes will be <mark>ignored<\/mark> from the other processing, too, for context,...",
             "weight" : 1 } ] } ] }

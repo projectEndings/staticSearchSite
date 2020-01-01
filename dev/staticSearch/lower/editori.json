@@ -12,11 +12,11 @@
             "weight" : 2 },
           
           { "form" : "Editorial",
-            "context" : "<mark>Editorial<\/mark> notes, for instance, which we will float...",
+            "context" : "...a definable bit then it will be so. <mark>Editorial<\/mark> notes, for instance, which we will float...",
             "weight" : 1 },
           
           { "form" : "editorial",
-            "context" : "...then it will be so. This means that <mark>editorial<\/mark> notes will be ignored from the other...",
+            "context" : "...should have their own context. This means that <mark>editorial<\/mark> notes will be ignored from the other...",
             "weight" : 1 },
           
           { "form" : "editorial",
